@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css2?family=Noto+Color+Emoji);
+@import url(https://fonts.googleapis.com/css2?family=Nerko+One);
+
+body {
+    background-image: linear-gradient(85deg, #642199 0, #4c1b99 50%, #2a1799 100%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.game {
+    display: flex;
+    color: white;
+    justify-content:space-around;
+    align-items: stretch;
+}
+
+.player, 
+.computer {
+    font-size: 56px;
+    font-weight: 500;
+    font-family: 'Nerko One';
+    text-align: center;
+    flex: 1;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.options {
+    position: absolute;
+    bottom: 7vh;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 8px;
+    padding: 0;
+}
+
+.options button {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    cursor: pointer;
+    font-size: 36px;
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    transition: filter 0.2s;
+    font-family: 'Noto Color Emoji';
+}
+
+.options button:hover {
+    filter: drop-shadow(0 0 1rem rgba(255, 255, 255, 0.3));
+}
+
+.score {
+    color: #ffb222;
+    font-weight: 800;
+    font-size: 50px;
+    font-family: 'Nerko One';
+}
+
+.computer img, 
+.player img {
+    width: auto;
+    height: 90vh;
+}
+
+footer, 
+.game {
+    margin-top: auto;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding-bottom: 12px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+img[src="img/shadow.png"] {
+    height: 100%;
+    width: 100%;
+    opacity: 0.35;
+}
+
+img {
+    pointer-events: none;
+}
